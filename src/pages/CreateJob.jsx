@@ -18,7 +18,7 @@ import useFetch from "@/hooks/useFetch";
 import { getCompanies } from "@/api/apiCompanies";
 import { useEffect } from "react";
 import { BarLoader, MoonLoader } from "react-spinners";
-import { data, Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { Label } from "@/components/ui/label";
 import MDEditor from "@uiw/react-md-editor";
 import { Button } from "@/components/ui/button";
@@ -60,7 +60,6 @@ const CreateJob = () => {
   });
 
   const { user, isLoaded } = useUser();
-  console.log(user);
 
   const {
     fn: companiesFn,

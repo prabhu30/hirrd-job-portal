@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FadeLoader, MoonLoader } from "react-spinners";
+import { MoonLoader } from "react-spinners";
 
 const Onboarding = () => {
   const { user, isLoaded } = useUser();

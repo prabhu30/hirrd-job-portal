@@ -12,7 +12,7 @@ import { Button } from "./ui/button";
 import useFetch from "@/hooks/useFetch";
 import { deleteJob, saveJob } from "@/api/jobsApi";
 import { useEffect, useState } from "react";
-import { BarLoader, MoonLoader } from "react-spinners";
+import { BarLoader } from "react-spinners";
 
 const JobCard = ({
   job,

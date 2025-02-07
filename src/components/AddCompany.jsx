@@ -15,9 +15,8 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import useFetch from "@/hooks/useFetch";
 import { postCompany } from "@/api/apiCompanies";
-import { BarLoader, MoonLoader } from "react-spinners";
+import { BarLoader } from "react-spinners";
 import { useEffect } from "react";
-import { data } from "react-router-dom";
 
 const schema = z.object({
   name: z.string().min(1, { message: "Company is required" }),
